@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="styletab.css">
+    <style>
+        /* styletab.css */
+
+/* Styles généraux de la page */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 20px;
+    background-color: #f8f9fa; /* Arrière-plan très clair */
+    color: #333;
+}
+
+/* Styles pour tous les tableaux */
+table {
+    width: 100%; /* S'étend sur toute la largeur du conteneur */
+    max-width: 600px; /* Limiter la taille maximale pour la lisibilité */
+    margin: 30px auto; /* Centrer le tableau */
+    border-collapse: collapse; /* Fusionner les bordures des cellules */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Ombre légère pour effet de relief */
+    background-color: #ffffff; /* Fond blanc */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Assure que les coins arrondis sont appliqués partout */
+}
+
+/* Titre du tableau */
+caption {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #007bff; /* Bleu principal */
+    padding: 10px 0;
+    margin-bottom: 5px;
+}
+
+/* Styles pour toutes les cellules (th et td) */
+th, td {
+    padding: 12px 15px;
+    text-align: left; /* Aligner le texte à gauche */
+    border: 1px solid #dee2e6; /* Bordure gris clair */
+}
+
+/* En-têtes de tableau (<th>) */
+th {
+    background-color: #007bff; /* Bleu d'en-tête */
+    color: white;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-color: #007bff; /* Bordure assortie */
+}
+
+/* Lignes du corps du tableau */
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2; /* Effet zèbre pour une meilleure lisibilité */
+}
+
+tbody tr:hover {
+    background-color: #e9ecef; /* Effet de survol */
+    cursor: default;
+}
+
+/* Pied de tableau (<tfoot>) */
+tfoot th, tfoot td {
+    background-color: #6c757d; /* Gris foncé */
+    color: white;
+    font-weight: bold;
+    border-top: 2px solid #333;
+}
+
+/* Styles pour les tableaux avec des fusions (visibilité accrue) */
+td[colspan], td[rowspan] {
+    background-color: #fff3cd; /* Jaune très clair pour mettre en évidence les cellules fusionnées */
+    font-style: italic;
+    font-weight: bold;
+    color: #856404;
+    text-align: center;
+}
+    </style>
+</head>
+<body>
+       
+            <table> 
+                <caption>Passagers du vol 377</caption> 
+                <tr> 
+                <th>Nom</th> 
+                <th>Age</th> 
+                <th>Pays</th> 
+                </tr> 
+                <tr> 
+                <td>Carmen</td> 
+                <td>33 ans</td> 
+                <td>Espagne</td> 
+                </tr> 
+                <tr> 
+                <td>Michelle</td> 
+                <td>26 ans</td> 
+                <td>Etats-Unis</td> 
+                </tr> 
+                </table>
+                <table> 
+                    <caption>Passagers du vol 377</caption> 
+                     
+                    <thead> <!-- En-tête du tableau --> 
+                    <tr>  
+                    <td>François</td> 
+                    <td>43 ans</td> 
+                    <td>France</td> 
+                    <tr> 
+                    <th>Nom</th> 
+                    <th>Age</th> 
+                    <th>Pays</th> 
+                    </tr> 
+                    </thead> 
+                     
+                    <tfoot> <!-- Pied de tableau --> 
+                    <tr> 
+                    <th>Nom</th> 
+                    <th>Age</th> 
+                    <th>Pays</th> 
+                    </tr> 
+                    </tfoot> 
+                     
+                    <tbody> <!-- Corps du tableau --> 
+                    <tr> 
+                    <td>Carmen</td> 
+                    <td>33 ans</td> 
+                    <td>Espagne</td> 
+                    </tr> 
+                    <tr> 
+                    <td>Michelle</td> 
+                    <td>26 ans</td> 
+                    <td>Etats-Unis</td> 
+                    </tr> 
+                    </tr> 
+                    <tr> 
+                    <td>Martine</td> 
+                    <td>34 ans</td> 
+                    <td>France</td> 
+                    </tr> 
+                    <tr> 
+                    <td>Jonathan</td> 
+                    <td>13 ans</td> 
+                    <td>Australie</td> 
+                    </tr> 
+                    <tr> 
+                    <td>Xu</td> 
+                    <td>19 ans</td> 
+                    <td>Chine</td> 
+                    </tr> 
+                    </tbody> 
+                    </table>
+                    <table> 
+                        <tr> 
+                        <th>Titre du film</th> 
+                        <th>Pour enfants ?</th> 
+                        <th>Pour adolescents ?</th> 
+                        </tr> 
+                        <tr> 
+                        <td>Massacre à la tronçonneuse</td> 
+                        <td >Non, trop violent</td> 
+                        <td>Oui</td> 
+                        </tr> 
+                        <tr> 
+                        <td>Les bisounours font du ski</td> 
+                        <td>Oui, adapté</td> 
+                        <td>Pas assez violent...</td> 
+                        </tr> 
+                        <tr> 
+                        <td>Lucky Luke, seul contre tous</td> 
+                        <td colspan="2">Pour toute la famille !</td> 
+                        </tr> 
+                        </table> 
+                        <table> 
+                        <tr> 
+                        <th>Titre du film</th> 
+                        <td>Massacre à la tronçonneuse</td> 
+                        <td>Les bisounours font du ski</td> 
+                        <td>Lucky Luke, seul contre tous</td> 
+                        </tr> 
+                        <tr> 
+                        <th>Pour enfants ?</th> 
+                        <td>Non, trop violent</td> 
+                        <td>Oui, adapté</td> 
+                        <td rowspan="2">Pour toute la famille !</td> 
+                        </tr> 
+                        <tr> 
+                        <th>Pour adolescents ?</th> 
+                        <td>Oui</td> 
+                        <td>Pas assez violent...</td> 
+                        </tr> 
+                        </table>
+</body>
+</html>

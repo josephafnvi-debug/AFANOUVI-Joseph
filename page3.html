@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page 3 - Joseph AFANOUVI</title>
+    <style>
+        /* Style général du corps de la page */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            padding: 20px;
+            max-width: 900px;
+            line-height: 1.6;
+            color: #333;
+            /* NOUVEAU: Arrière-plan subtil sur le corps */
+            background: linear-gradient(to bottom, #f0f8ff, #ffffff); 
+            /* Bleu très clair au blanc */
+        }
+
+        /* Style de l'en-tête */
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #007bff;
+            margin-bottom: 30px;
+        }
+
+        /* Titres */
+        h1 {
+            color: #007bff;
+            font-size: 2.5em;
+            margin-top: 10px;
+            margin-bottom: 5px;
+        }
+
+        /* Titres de section */
+        h2 {
+            color: #28a745; 
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 5px;
+            margin-top: 40px;
+            /* NOUVEAU: Ajout d'une petite couleur de fond pour les titres H2 */
+            background-color: #f7f7f7;
+            padding-left: 10px;
+            border-radius: 5px;
+        }
+
+        /* Gestion des logos dans le header (Flexbox) */
+        .logo-container {
+            overflow: auto;
+            margin-bottom: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo-container > a {
+            flex-basis: 30%;
+            text-align: center;
+        }
+        
+        .logo-container > h2 {
+            flex-basis: 40%;
+            margin: 0;
+            border-bottom: none;
+            padding-bottom: 0;
+            color: #007bff;
+            background-color: transparent; /* Assurer que le h2 du header n'a pas de fond */
+        }
+
+
+        header img {
+            max-width: 150px;
+            height: auto;
+            border-radius: 5px;
+            vertical-align: middle;
+        }
+        
+        /* Ajustement du style h2 dans le header */
+        header h2 {
+            color: #007bff;
+            font-size: 1.5em;
+            text-align: center;
+            border-bottom: none;
+            margin: 0;
+            margin-top: 10px;
+        }
+        
+        header h2 span a {
+            color: #28a745;
+            font-size: 0.8em;
+            text-decoration: none;
+        }
+
+        /* Photo de profil/lien */
+        .profile-link img {
+            border: 5px solid #007bff;
+            border-radius: 50%;
+            margin-top: 20px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .profile-link img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Séparateurs */
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: #eee;
+            margin: 20px 0;
+        }
+
+        /* Infos personnelles */
+        #personal-info {
+            text-align: center;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* NOUVEAU: Arrière-plan pour la section d'infos */
+            background-color: #ffffff; 
+        }
+        
+        #personal-info div {
+            padding: 8px 0; /* Augmenter le padding */
+            border-bottom: 1px dotted #ccc;
+            width: 70%; /* Augmenter la largeur pour centrer */
+            margin: 0 auto;
+            text-align: left;
+            font-weight: bold; /* Rendre le texte plus lisible */
+        }
+        
+        #personal-info div:last-child {
+            border-bottom: none;
+        }
+
+        /* Lien de retour */
+        #back-link a {
+            color: #007bff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 15px;
+            border: 1px solid #007bff;
+            border-radius: 5px;
+            display: inline-block;
+            margin-bottom: 20px;
+            transition: background-color 0.3s;
+        }
+        
+        #back-link a:hover {
+            background-color: #007bff;
+            color: white;
+        }
+
+        /* Listes (Formations & Loisirs) */
+        /* NOUVEAU: Stylisation des listes */
+        ol, ul {
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 30px;
+        }
+        
+        /* Arrière-plan spécifique pour les Formations */
+        #mes-formations + ol {
+            background-color: #e6f7ff; /* Bleu très clair */
+            border: 1px solid #b3e0ff;
+        }
+        
+        /* Arrière-plan spécifique pour les Loisirs */
+        #mes-loisirs + ul {
+            background-color: #fff0e6; /* Orange très clair */
+            border: 1px solid #ffe0b3;
+        }
+
+
+        li {
+            margin-bottom: 8px;
+        }
+        
+        /* Situation professionnelle */
+        .pro-details {
+            padding: 15px;
+            background: linear-gradient(to right, #d4edda, #ffffff); /* Dégradé vert/blanc */
+            border-radius: 5px;
+            border-left: 5px solid #28a745;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="https://unevoc.unesco.org/go.php/Benin/TVET_Systems/country/145" target="_blank">
+                <img src="https://unevoc.unesco.org/network/up/benin_-_ministry2.jpg" alt="Logo du ministère">
+            </a>
+            
+            <h2>Bienvenue sur mon site WEB <br><span><a href="#situation_professionnelle" title="Profil de Joseph Dieudonne">AFANOUVI Joseph Dieudonne</a></span></h2>
+            
+            <a href="https://pigier.com/benin" target="_blank">
+                <img src="pigierlogo.png" alt="Logo de Pigier Benin">
+            </a>
+        </div>
+        
+        <a href="page2.html" title="Cliquer pour voir ma Page 2" class="profile-link">
+            <img src="jojo56.jpeg" alt="Photo de Joseph" width="150" height="200">
+            <br>
+            Cliquer pour voir ma Page 2
+        </a>
+        <div style="clear: both;"></div>
+    </header>
+
+    <hr>
+
+
+    <h2 id="infos-personnelles">I - Infos personnelles 🧑</h2>
+    
+    <p style="text-align: center;" id="back-link">
+        <a href="page2.html">Retour sur la page 2</a>
+    </p>
+
+    <div id="personal-info">
+        <div>NOM: **AFANOUVI**</div>
+        <div>PRENOM: **Joseph Dieudonne**</div>
+        <div>SEXE: Masculin</div>
+        <div>CONTACT: 229 01 40 53 62 58</div>
+        <div>MAIL: josephafnvi@gmail.com</div>
+    </div>
+    
+    <hr>
+
+
+    <h2 id="mes-formations">II - Mes formations 🎓</h2>
+    
+    <ol>
+        <li>CEP (Certificat d'Études Primaires)</li>
+        <li>BEPC (Brevet d'Études du Premier Cycle)</li>
+        <li>BAC (Baccalauréat)</li>
+        <li>**Actuellement en Licence 2 en Réseaux, Mobilité, Sécurité (RMS)**</li>
+    </ol>
+    
+    <hr>
+
+
+    <h2 id="mes-loisirs">III - Mes loisirs 🏀🎶</h2>
+    
+    <ul>
+        <li>**Basketball**</li>
+        <li>Sport (Fitness et Course à pied)</li>
+        <li>Musique (Écoute et Découverte)</li>
+        <li>Danse</li>
+        <li>Prendre l'air à la **plage**</li>
+    </ul>
+    
+    <hr>
+
+
+    <h2 id="situation_professionnelle">IV - Situation professionnelle 💻</h2>
+    
+    <div class="pro-details">
+        **Compétences et Domaines d'intérêt :**
+        <br>
+        E-commerce <br/>
+        Montage vidéo <br/>
+        Consultant en Facebook ADS <br/>
+        License 2 en Réseaux, Mobilité, Sécurité (RMS) <br/>
+    </div>
+    <br>
+    
+</body>
+</html>

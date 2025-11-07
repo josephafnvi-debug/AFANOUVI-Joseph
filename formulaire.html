@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire d'Inscription Stylisé</title>
+    <style>
+        /* [Coller le contenu de form_style.css ici pour le test immédiat] */
+        /* ... (Les styles CSS détaillés ci-dessus) ... */
+        /* Styles de base */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #e9ecef; /* Arrière-plan doux */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Conteneurs de formulaire */
+        form {
+            background-color: #ffffff;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+
+        /* Titres de page */
+        .page-title { /* Utilisation d'une classe pour cibler le titre principal */
+            font-size: 1.8em;
+            font-weight: bold;
+            color: #007bff;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.2em;
+            color: #dc3545;
+            text-align: center;
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Labels et champs de saisie (texte, password, textarea, select) */
+        label {
+            display: block;
+            font-weight: 600;
+            margin-top: 15px;
+            color: #495057;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border: 1px solid #ced4da;
+            border-radius: 4px;
+            box-sizing: border-box;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus,
+        textarea:focus,
+        select:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        /* Checkbox et Radio buttons */
+        input[type="checkbox"],
+        input[type="radio"] {
+            margin-right: 8px;
+            cursor: pointer;
+        }
+
+        /* Amélioration des labels pour les radio/checkbox pour le clic */
+        input[type="checkbox"] + label,
+        input[type="radio"] + label {
+            display: inline;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        /* Fieldset pour l'organisation */
+        fieldset {
+            border: 2px solid #adb5bd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 6px;
+        }
+
+        legend {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #007bff;
+            padding: 0 10px;
+        }
+
+        /* Boutons Submit et Reset */
+        .form-actions {
+            margin-top: 25px;
+            text-align: right;
+        }
+        
+        input[type="submit"],
+        input[type="reset"] {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 15px;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"] {
+            background-color: #28a745;
+            color: white;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1e7e34;
+        }
+
+        input[type="reset"] {
+            background-color: #6c757d;
+            color: white;
+        }
+
+        input[type="reset"]:hover {
+            background-color: #5a6268;
+        }
+
+        /* Groupes d'options (optgroup) */
+        optgroup {
+            font-weight: bold;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <p class="page-title">FORMULAIRE INSCRIPTION</p>
+
+    <form method="post" action="traitement.php"> 
+        <h2>VEUILLEZ REMPLIR CHAQUE CHAMP</h2>
+
+        <fieldset>
+            <legend>Informations de Connexion</legend>
+            <label for="pseudo">Votre pseudo :</label> 
+            <input type="text" name="pseudo" id="pseudo" value="M@teo21" tabindex="1" />
+            
+            <label for="pass">Votre mot de passe :</label> 
+            <input type="password" name="pass" id="pass" tabindex="2" />
+        </fieldset>
+
+        <fieldset> 
+            <legend>Vos Coordonnées</legend>
+            <label for="nom">Quel est votre nom ?</label> 
+            <input type="text" name="nom" id="nom" tabindex="3" /><br /> 
+            
+            <label for="prenom">Quel est votre prénom ?</label> 
+            <input type="text" name="prenom" id="prenom" tabindex="4" /><br /> 
+            
+            <label for="email">Quel est votre e-mail ?</label> 
+            <input type="text" name="email" id="email" tabindex="5" /><br /> 
+        </fieldset>
+
+        <fieldset>
+            <legend>Vos Préférences et Localisation</legend>
+            
+            <p>
+                <label>Cochez les aliments que vous aimez manger :</label><br />
+                <input type="checkbox" name="frites" id="frites" /> <label for="frites">Frites</label><br /> 
+                <input type="checkbox" name="steak" id="steak" /> <label for="steak">Steak haché</label><br /> 
+                <input type="checkbox" name="epinards" id="epinards" checked="checked" /> <label for="epinards">Épinards</label><br /> 
+                <input type="checkbox" name="huitres" id="huitres" /> <label for="huitres">Huîtres</label> 
+            </p>
+
+            <p>
+                <label>Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :</label><br />
+                <input type="radio" name="age" value="moins15" id="moins15" tabindex="6" /> <label for="moins15">Moins de 15 ans</label><br /> 
+                <input type="radio" name="age" value="medium15-25" id="medium15-25" checked="checked" tabindex="7" /> <label for="medium15-25">15-25 ans</label><br /> 
+                <input type="radio" name="age" value="medium25-40" id="medium25-40" tabindex="8" /> <label for="medium25-40">25-40 ans</label><br /> 
+                <input type="radio" name="age" value="plus40" id="plus40" tabindex="9" /> <label for="plus40">Encore plus vieux que ça ?!</label> 
+            </p>
+            
+            <p>
+                <label for="pays">Dans quel pays habitez-vous ?</label><br /> 
+                <select name="pays" id="pays" tabindex="10"> 
+                    <optgroup label="Europe"> 
+                        <option value="france">France</option> 
+                        <option value="espagne">Espagne</option> 
+                        <option value="italie">Italie</option> 
+                        <option value="royaume-uni">Royaume-Uni</option> 
+                    </optgroup> 
+                    <optgroup label="Amérique"> 
+                        <option value="canada" selected="selected">Canada</option> 
+                        <option value="etats-unis">États-Unis</option> 
+                    </optgroup> 
+                    <optgroup label="Asie"> 
+                        <option value="chine">Chine</option> 
+                        <option value="japon">Japon</option> 
+                    </optgroup> 
+                </select> 
+            </p>
+        </fieldset>
+
+        <fieldset> 
+            <legend>Votre Souhait</legend>
+            <p> 
+                <label>Faites un souhait que vous voudriez voir exaucé :</label><br /> 
+                <input type="radio" name="souhait" value="riche" id="riche_r" tabindex="11" /> <label for="riche_r">Être riche</label><br /> <input type="radio" name="souhait" value="celebre" id="celebre_r" tabindex="12" /> <label for="celebre_r">Être célèbre</label><br /> 
+                <input type="radio" name="souhait" value="intelligent" id="intelligent_r" tabindex="13" /> <label for="intelligent_r">Être **encore** plus intelligent</label><br /> 
+                <input type="radio" name="souhait" value="autre" id="autre_r" tabindex="14" /> <label for="autre_r">Autre...</label><br /> 
+            </p> 
+            
+            <p> 
+                <label for="precisions">Si "Autre", veuillez préciser :</label>
+                <textarea name="precisions" id="precisions" cols="40" rows="4" tabindex="15" placeholder="Décrivez votre souhait ici..."></textarea> 
+            </p> 
+        </fieldset>
+        
+        <div class="form-actions">
+            <input type="reset" value="Réinitialiser" /> 
+            <input type="submit" value="Envoyer les données" /> 
+        </div>
+    </form>
+    
+</body>
+</html>

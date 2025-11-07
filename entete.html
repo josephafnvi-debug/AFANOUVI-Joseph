@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>En-tête Stylisé avec Espacement</title>
+    <style>
+        /* Styles de base pour le corps (pour centrer l'en-tête) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* --- Style de l'En-tête Global --- */
+        header {
+            background-color: #ffffff; /* Fond blanc */
+            padding: 15px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre portée douce */
+            border-bottom: 5px solid #007bff; /* Bordure inférieure bleue */
+        }
+
+        /* --- Conteneur Flexbox pour les Logos et le Titre --- */
+        .logo-container {
+            display: flex; /* Active Flexbox */
+            justify-content: space-between; /* Espace maximum entre les éléments */
+            align-items: center; /* Alignement vertical centré */
+            margin: 0 auto; /* Centre le conteneur dans le header */
+        }
+
+        /* --- Styles des Logos (Liens) --- */
+        .logo-container a {
+            flex-basis: 18%; /* Légèrement réduit pour laisser de la place aux marges */
+            text-align: center;
+            margin: 0 15px; 
+        }
+        
+        .logo-container img {
+            max-height: 100px; /* Hauteur maximale des logos */
+            width: auto;
+            vertical-align: middle;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.05); /* Zoom subtil au survol */
+        }
+
+        /* --- Styles du Titre Central (H2) --- */
+        .logo-container h2 {
+            /* flex-basis: 55%; Ancienne valeur */
+            flex-basis: 54%; /* Ajusté pour tenir compte des nouvelles marges */
+            text-align: center;
+            color: #333;
+            font-size: 1.5em;
+            margin: 0;
+            line-height: 1.2;
+        }
+        
+        /* Style du nom dans le titre */
+        .logo-container h2 span a {
+            color: #28a745; /* Vert pour le nom */
+            font-size: 1.2em;
+            font-weight: bold;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .logo-container h2 span a:hover {
+            color: #007bff;
+        }
+
+        /* Media Query pour les petits écrans (tablettes/mobiles) */
+        @media (max-width: 600px) {
+            .logo-container {
+                flex-direction: column; /* Empile les éléments verticalement */
+                padding: 10px 0;
+            }
+            
+            .logo-container a, .logo-container h2 {
+                flex-basis: auto;
+                width: 100%;
+                margin: 5px 0 10px 0; /* Ajustement de la marge pour les éléments empilés */
+            }
+
+            .logo-container h2 {
+                font-size: 1.2em;
+            }
+            
+            .logo-container img {
+                max-height: 60px; /* Réduire la taille des logos sur mobile */
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="https://unevoc.unesco.org/go.php/Benin/TVET_Systems/country/145" target="_blank">
+                <img src="https://unevoc.unesco.org/network/up/benin_-_ministry2.jpg" alt="Logo du ministère" height="400" width="400">
+            </a>
+            
+            <h2>Bienvenue sur mon site WEB <br><span><a href="#" title="Profil de Joseph Dieudonne">AFANOUVI Joseph Dieudonne</a></span></h2>
+            
+            <a href="https://pigier.com/benin" target="_blank">
+                <img src="pigierlogo.png" alt="Logo de Pigier Benin"  width="50" height="50"> 
+            </a>
+        </div>
+    </header>
+</body>
+</html>

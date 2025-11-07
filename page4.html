@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> <link rel="stylesheet" href="style4.css">
+    <style>
+        /* style4.css */
+
+/* 1. Styles globaux */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 800px; /* Limiter la largeur du contenu */
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 20px;
+    background-color: #f4f4f9; /* Arrière-plan gris très clair */
+    color: #333;
+}
+
+/* 2. Titres */
+h2 {
+    color: #007bff; /* Bleu principal */
+    border-bottom: 2px solid #ccc; /* Séparateur */
+    padding-bottom: 5px;
+    margin-top: 30px;
+    font-size: 1.8em;
+}
+
+/* 3. Styles généraux des listes (conteneurs) */
+ul, ol, dl {
+    background-color: #ffffff; /* Fond blanc pour les blocs de liste */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Légère ombre pour effet de relief */
+    margin-bottom: 25px;
+}
+
+/* Styles des éléments de liste */
+li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* 4. Styles pour la Liste de Définition (dl) */
+dt {
+    font-weight: bold;
+    color: #28a745; /* Vert pour les termes */
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+dd {
+    margin-left: 20px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #b3e0b3; /* Barre verticale pour distinguer la description */
+}
+
+/* 5. Listes non ordonnées (<ul>) */
+/* Les listes non stylisées (sans classe) utilisent le style par défaut 'disc' */
+
+ul.cercle {
+    list-style-type: circle;
+}
+
+ul.carre {
+    list-style-type: square;
+}
+
+ul.rien {
+    list-style-type: none; /* Supprime les puces */
+    padding-left: 0; /* Important : supprime l'indentation par défaut */
+}
+
+/* 6. Listes ordonnées (<ol>) */
+/* La liste sans classe utilise le style par défaut 'decimal' */
+
+ol.commence_a_zero {
+    list-style-type: decimal-leading-zero; /* 01, 02, 03... */
+}
+
+ol.lettres_minuscules {
+    list-style-type: lower-alpha; /* a, b, c... */
+}
+
+ol.chiffres_romains {
+    list-style-type: upper-roman; /* I, II, III... */
+}
+
+ol.lettres_grecques {
+    list-style-type: lower-greek; /* α, β, γ... */
+}
+
+/* Style d'emphase pour les notes dans le texte */
+em {
+    color: #dc3545; /* Accent rouge pour les remarques */
+    font-style: normal;
+    font-weight: 500;
+}
+    </style>
+</head>
+<body>
+    <ul> 
+        <li>Fraises</li> 
+        <li>Framboises</li> 
+        <li>Cerises</li> 
+        </ul>
+        <ol> 
+            <li>Je me lève</li> 
+            <li>Je mange et je bois</li> 
+            <li>Je retourne me coucher</li> 
+        </ol>
+        <dl> 
+            <dt>Chat</dt> 
+            <dd>Animal à 4 pattes qui fait "Miaou !"</dd> 
+            <dt>Chien</dt> 
+            <dd>Animal à 4 pattes qui fait "Ouaf Ouaf !"</dd> 
+            <dt>Prof de maths</dt> 
+            <dd>Personne qui enseigne des choses que personne ne comprend</dd> 
+        </dl>
+        <h2>Quelques listes non ordonnées</h2> 
+        <p>Voici une liste à puce non ordonnée sans modification (= <em>disc</em>) :</p> 
+        <ul> 
+        <li>Liste</li> 
+        <li>à</li> 
+        <li>puces</li> 
+        </ul> 
+        <p>Avec <em>circle</em> :</p> 
+        <ul class="cercle"> 
+        <li>Liste</li> 
+        <li>à</li> 
+        <li>puces</li> 
+        </ul> 
+        <p>Avec <em>square</em> :</p> 
+        <ul class="carre"> 
+        <li>Liste</li> 
+        <li>à</li> 
+        <li>puces</li> 
+        </ul> 
+        <p>Avec <em>none</em> (sans puces) :</p> 
+        <ul class="rien"> 
+        <li>Liste</li> 
+        <li>à</li> 
+        <li>puces</li> 
+        </ul> 
+        <h2>Quelques listes ordonnées</h2> 
+        <p>Liste à puces ordonnée sans modification (= <em>decimal</em>)</p> 
+        <ol> 
+        <li>Un</li> 
+        <li>Deux</li> 
+        <li>Trois</li> 
+        <li>Quatre</li> 
+        </ol> 
+        <p>Avec <em>decimal-leading-zero</em> (<strong>Ne fonctionne pas sous IE)</strong>) :</p> 
+        <ol class="commence_a_zero"> 
+        <li>Un</li> 
+        <li>Deux</li> 
+        <li>Trois</li> 
+        <li>Quatre</li> 
+        </ol> 
+        <p>Avec <em>lower-alpha</em> :</p> 
+        <ol class="lettres_minuscules"> 
+        <li>Un</li> 
+        <li>Deux</li> 
+        <li>Trois</li> 
+        <li>Quatre</li> 
+        </ol> 
+        <p>Avec <em>upper-roman</em> :</p> 
+        <ol class="chiffres_romains"> 
+        <li>Un</li> 
+        <li>Deux</li> 
+        <li>Trois</li> 
+        <li>Quatre</li> 
+        </ol> 
+        <p>Avec <em>lower-greek</em> (<strong>Ne fonctionne pas sous IE</strong>) :</p> 
+        <ol class="lettres_grecques"> 
+        <li>Un</li> 
+        <li>Deux</li> 
+        <li>Trois</li> 
+        <li>Quatre</li> 
+        </ol>   
+
+</body>
+</html>

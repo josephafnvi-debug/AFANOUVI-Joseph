@@ -1,0 +1,26 @@
+
+td,th {
+    border: 1px solid black;
+}
+table {
+    width: 35px;
+    margin-right: auto;
+}
+table{
+    border-collapse: collapse;
+    width: 35%;
+    
+}
+.t1 {
+    text-align: center;
+}
+.t2{
+    color: red;
+}
+.t3, .t33 {
+    color: green;
+}
+.t11 {
+    writing-mode: vertical-lr;
+    text-orientation: mixed;
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="tab1.css">
+    <title>monsite</title>
+    <style>
+        /* tab1.css */
+
+/* Styles de base pour le corps */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f4f4f9; /* Arrière-plan clair */
+    color: #333;
+}
+
+/* Styles pour les titres H1 des tableaux */
+h1 {
+    color: #007bff; /* Bleu */
+    font-size: 1.5em;
+    margin-top: 30px;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* Styles pour tous les tableaux */
+table {
+    width: 300px; /* Largeur fixe pour la démo */
+    border-collapse: collapse; /* Fusionner les bordures */
+    margin: 15px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    background-color: #fff; /* Fond blanc */
+}
+
+/* Styles pour toutes les cellules (td et th) */
+td, th {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    height: 50px; /* Hauteur fixe pour mieux visualiser les fusions */
+}
+
+/* --- Styles spécifiques au TABLEAU 1 (fusion de colonnes) --- */
+
+.table1 table {
+    border: 3px solid #28a745; /* Bordure verte */
+}
+
+.t1 {
+    background-color: #d4edda; /* Vert très clair */
+    font-weight: bold;
+    color: #155724;
+}
+
+.t2 {
+    background-color: #fff3cd; /* Jaune très clair */
+}
+
+.t3 {
+    background-color: #ffe5cc; /* Orange très clair */
+}
+
+
+/* --- Styles spécifiques au TABLEAU 2 (fusion de lignes) --- */
+
+.table2 table {
+    border: 3px solid #007bff; /* Bordure bleue */
+}
+
+.t11 {
+    background-color: #cce5ff; /* Bleu très clair */
+    font-weight: bold;
+    color: #004085;
+}
+
+.t22 {
+    background-color: #e2e3e5; /* Gris clair */
+}
+
+.t33 {
+    background-color: #f8d7da; /* Rose clair */
+}
+
+
+/* --- Styles spécifiques au TABLEAU 3 (mélange rowspan et colspan, avec TH) --- */
+
+.table3 {
+    border: 3px solid #6f42c1; /* Bordure violette */
+}
+
+.table3 th {
+    background-color: #e6e0f8; /* Violet clair pour les en-têtes */
+    color: #492a72;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Cellules TD du Tableau 3 */
+.table3 td {
+    background-color: #ffffff;
+}
+
+/* Amélioration de la structure HTML (à corriger dans le HTML si possible) */
+/* Remarque : Les balises <p> vides et <th> autour de <h1> sont invalides,
+   mais cette correction CSS assure que le <h1> est visible */
+
+/* Correction de l'alignement pour le titre du TABLEAU 3 dans le HTML */
+.table2 h1 {
+    margin-top: 30px;
+}
+    </style>
+</head>
+<body>
+    <div class="table1">
+        <h1>
+            TABLEAU 1 : 
+        </h1>
+        <table>
+            <tr>
+                <td colspan="2" class="t1">RGL1</td>
+            </tr>
+            <tr>
+                <td class="t2"><strong>RGL2</strong></td>
+                <td class="t3">RGL3</td>
+            </tr>
+        </table>
+    </div>
+    <div class="table2">
+        <h1>
+            TABLEAU 2 : 
+        </h1>
+        <table>
+            <tr>
+                <td rowspan="2" class="t11">RMS1</td><td class="t22">RMS2</td>
+            </tr>
+            <tr>
+               
+                <td class="t33">RMS3</td>
+            </tr>
+        </table>
+        <p></p>
+        <th><strong>
+            <h1> TABLEAU 3</h1></strong></th>
+        <p></p>
+        <table class="table3">
+            <tr>
+                
+                <th colspan="3">A</th>
+            </tr>
+            <tr>
+                <td rowspan="2">B</td>
+                <th colspan="2">C</th>
+                
+            </tr>
+            <tr>
+                <td >D</td>
+                <td>E</td>
+            </tr>
+        </table>
+    </body>
+    </html>
+    </div>
+</body>
+</html>

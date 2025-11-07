@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu de Navigation Stylisé</title>
+    <style>
+        /* Styles de base */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* --- 1. Conteneur de la liste (<ul>) --- */
+        ul {
+            list-style-type: none; /* Supprime les puces par défaut */
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Important pour contenir les éléments flottants ou Flexbox */
+            background-color: #333; /* Arrière-plan sombre pour la barre de navigation */
+            display: flex; /* Utilisation de Flexbox pour l'alignement horizontal */
+            justify-content: center; /* Centrer tous les liens dans la barre */
+            flex-direction: column;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Ombre légère pour l'effet de profondeur */
+        }
+
+        /* --- 2. Éléments de la liste (<li>) --- */
+        li {
+            /* Pas besoin de float; display: flex gère l'alignement */
+            margin: 0;
+        }
+
+        /* --- 3. Les liens (<a>) qui sont les boutons du menu --- */
+        li a {
+            display: block; /* Important pour que toute la zone du lien soit cliquable */
+            color: white;
+            text-align: center;
+            padding: 14px 20px; /* Espace autour du texte (bouton) */
+            text-decoration: none; /* Supprime le soulignement des liens */
+            text-transform: uppercase; /* Met le texte en majuscule */
+            font-weight: bold;
+            transition: background-color 0.3s, color 0.3s; /* Transition fluide pour le survol */
+        }
+
+        /* --- 4. Effets de survol et Actif --- */
+        li a:hover {
+            background-color: #007bff; /* Changement de couleur au survol (Bleu) */
+            color: #fff;
+        }
+        
+        /* Style pour l'élément actif (si besoin, à ajouter manuellement au HTML) */
+        li a.active {
+            background-color: #28a745; /* Vert pour l'élément actuellement sélectionné */
+            color: #fff;
+        }
+
+        /* Option: Réponse mobile si la place manque (défilement horizontal) */
+        @media (max-width: 700px) {
+            ul {
+                justify-content: flex-start; /* Aligner à gauche sur mobile */
+                overflow-x: auto; /* Permettre le défilement horizontal */
+                white-space: nowrap; /* Empêche les liens de passer à la ligne */
+            }
+            li {
+                flex-shrink: 0; /* Empêche les liens de rétrécir */
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <nav> <ul>
+            <li><a class="active" href="page1.html" target="affiche">Accueil</a></li>
+            <li><a href="page3.html" target="affiche">Présentation</a></li>
+            <li><a href="essai.html" target="affiche">Infos-personnelles</a></li>
+            <li><a href="page4.html" target="affiche">Listes</a></li>
+            <li><a href="page5.html" target="affiche">Tableau</a></li>
+            <li><a href="tableau.html" target="affiche">Tableau 2</a></li>
+            <li><a href="formulaire.html" target="affiche">Formulaire</a></li>
+            <li><a href="cv.html" target="affiche">CV</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
