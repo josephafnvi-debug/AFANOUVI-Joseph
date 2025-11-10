@@ -42,7 +42,13 @@ body {
     margin: 0 auto 15px;
     border: 4px solid #fff;
 }
-
+/* Style pour l'image à l'intérieur du conteneur circulaire */
+.photo-placeholder img {
+    width: 100%;       /* L'image prend 100% de la largeur du conteneur parent (.photo-placeholder) */
+    height: 100%;      /* L'image prend 100% de la hauteur du conteneur parent */
+    object-fit: cover; /* Recadre l'image pour qu'elle couvre parfaitement le cercle sans être déformée */
+    border-radius: 50%; /* Rend l'image elle-même parfaitement ronde */
+}
 .colonne-gauche h1 {
     font-size: 1.8em;
     margin-bottom: 5px;
@@ -138,4 +144,5 @@ body {
     .colonne-gauche h1 {
         font-size: 1.5em;
     }
+
 }
