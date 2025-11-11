@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil - AFANOUVI Joseph Dieudonne</title>
+    <style>
+        /* Styles de base */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+        }
+        
+        /* Conteneur principal avec le dégradé */
+        .accueil-background {
+            height: 100vh; /* Prend toute la hauteur disponible */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            /* Dégradé de couleur bleu/cyan inspiré de votre image */
+            background: linear-gradient(135deg, #00c6ff 0%, #00d4ff 50%, #40e0d0 100%);
+        }
+        
+        /* Titre principal */
+        .accueil-title {
+            font-size: 3.5em;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 20px;
+            /* Ombre portée pour faire ressortir le texte blanc */
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+        }
+        
+        /* Sous-titre/Nom */
+        .accueil-subtitle {
+            font-size: 2em;
+            font-weight: 400;
+            text-align: center;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        
+        /* Bouton/Message d'instruction */
+        .accueil-instruction {
+            background-color: rgba(255, 255, 255, 0.2); /* Fond semi-transparent */
+            /* backdrop-filter: blur(5px); -- Peut nécessiter un fichier CSS externe pour bien fonctionner sur certaines versions */
+            padding: 20px 30px;
+            border-radius: 8px;
+            text-align: center;
+            max-width: 450px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            font-size: 1.1em;
+            line-height: 1.4;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="accueil-background">
+        <h1 class="accueil-title">Bienvenue sur mon Site</h1>
+        <h2 class="accueil-subtitle">Je m'appelle AFANOUVI Joseph Dieudonne</h2>
+        
+        <div class="accueil-instruction">
+            Veuillez utiliser le menu de navigation à gauche pour explorer le contenu des pages.
+        </div>
+    </div>
+</body>
+</html>
