@@ -10,44 +10,47 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            color: white;
+            color: #333; /* Texte sombre pour un meilleur contraste avec le fond clair */
         }
         
         /* Conteneur principal avec le dégradé */
         .accueil-background {
-            height: 100vh; /* Prend toute la hauteur disponible */
+            height: 100vh; 
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
             
-            /* Dégradé de couleur bleu/cyan inspiré de votre image */
-            background: linear-gradient(135deg, #00c6ff 0%, #00d4ff 50%, #40e0d0 100%);
+            /* DÉGRADÉ ADAPTÉ : Utilise les teintes BLEU/VERT de votre charte */
+            /* Bleu clair vers Vert clair */
+            background: linear-gradient(145deg, #e0f2ff 0%, #d4ede6 100%); 
         }
         
         /* Titre principal */
         .accueil-title {
+            color: #007bff; /* BLEU VIF */
             font-size: 3.5em;
             font-weight: 700;
             text-align: center;
             margin-bottom: 20px;
-            /* Ombre portée pour faire ressortir le texte blanc */
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+            /* Ombre portée subtile en gris */
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
         }
         
         /* Sous-titre/Nom */
         .accueil-subtitle {
+            color: #28a745; /* VERT DE VOTRE CHARTE */
             font-size: 2em;
-            font-weight: 400;
+            font-weight: 500;
             text-align: center;
             margin-bottom: 40px;
-            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
         }
         
         /* Bouton/Message d'instruction */
         .accueil-instruction {
-            background-color: rgba(255, 255, 255, 0.2); /* Fond semi-transparent */
-            /* backdrop-filter: blur(5px); -- Peut nécessiter un fichier CSS externe pour bien fonctionner sur certaines versions */
+            /* Utilisation d'un fond solide pour le contraste */
+            background-color: #007bff; /* Fond bleu */
+            color: white; /* Texte blanc */
             padding: 20px 30px;
             border-radius: 8px;
             text-align: center;
@@ -55,6 +58,7 @@
             box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             font-size: 1.1em;
             line-height: 1.4;
+            border: 2px solid #28a745; /* Bordure verte pour l'accentuation */
         }
 
     </style>
