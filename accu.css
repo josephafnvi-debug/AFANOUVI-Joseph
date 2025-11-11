@@ -1,0 +1,47 @@
+/* Assurez-vous d'avoir bien la police Roboto liée dans votre HTML */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.accueil-background {
+    height: 100vh; /* Pleine hauteur de la frame */
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    flex-direction: column;
+    
+    /* Dégradé de couleur bleu/cyan/turquoise */
+    background: linear-gradient(135deg, #00c6ff 0%, #00d4ff 50%, #40e0d0 100%);
+}
+
+.accueil-title {
+    font-size: 3.5em;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.accueil-subtitle {
+    font-size: 2em;
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+}
+
+.accueil-instruction {
+    background-color: rgba(255, 255, 255, 0.2);
+    /* backdrop-filter: blur(5px); */
+    padding: 20px 30px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 450px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    font-size: 1.1em;
+    line-height: 1.4;
+}
